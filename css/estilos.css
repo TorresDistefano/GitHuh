@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+.grilla {
+    display: grid;
+    background-color: white;
+    /* columnas */
+    grid-template-columns: 8fr 1fr;
+    /* filas */
+    grid-template-rows: .2fr 1.5fr .5fr .5fr .5fr .5fr .5fr .6fr;
+    grid-template-areas:
+        "nav nav"
+        "header header"
+        "section1 aside"
+        "section2 aside"
+        "section3 aside"
+        "section4 aside"
+        "section5 aside"
+        "footer footer"
+
+    ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: stretch;
+
+}
+
+
+.nav.nav {
+    grid-area: nav;
+    background-color: white;
+    overflow-y: hidden;
+    /* border-bottom: black solid 1px; */
+    z-index: 1;
+    box-shadow: 1px 6px 18px -5px;
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Saira', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+    font-weight: bold;
+    background-image: linear-gradient(
+        -180deg, #4e95a7, rgb(255 255 255 / 0%));
+
+
+}
+
+ nav.nav ul  { 
+    align-items: center;
+    overflow-y: hidden;
+       
+} 
+
+.header {
+    grid-area: header
+}
+
+.section1 {
+    background-color: white;
+    grid-area: section1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.olas {
+    color: brown;
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+}
+
+.h2 {
+    position: relative;
+    bottom: 20px;
+    
+}
+
+.textoLargo {
+    font-size: 20px;
+
+}
+
+/* primera fila de imagenes */
+
+div.imgSection2 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgSection2 ul a img {
+    height: 90%;
+}
+
+section.section2 {
+    overflow-y: hidden;
+}
+
+/* segunda fila de imagenes */
+
+div.imgSection3 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgSection3 ul a img {
+    height: 90%;
+}
+
+section.section3 {
+    overflow-y: hidden;
+}
+
+
+
+/* tercera fila de imagenes */
+
+div.imgSection4 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgSection4 ul a img {
+    height: 90%;
+}
+
+section.section4 {
+    overflow-y: hidden;
+
+}
+
+/* cuarta fila de imagenes */
+
+div.imgSection5 ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgSection5 ul a img {
+    height: 90%;
+}
+
+section.section5 {
+    overflow-y: hidden;
+}
+
+.aside {
+    background-color: rgb(248, 247, 246);
+    grid-area: aside;
+    position: relative;
+   
+
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    border-top: solid 1px black;
+}
+
+div.grilla footer {
+    overflow-y: hidden;
+
+}
+
+/* logo */
+
+div.grilla nav.nav img {
+    height: 6em;
+    border-radius: 50%;
+    position: relative;
+    top: 0.5em;
+    right: 35%;
+    overflow-y: hidden;
+   
+
+}
+
+
+div.grilla nav.nav img:hover {
+    transform: scale(3, 3);
+    transition-duration: 3s;
+}
+
+
+h1 {
+
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: white;
+    z-index: 10;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-125%, 20%);
+    font-size: 5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* linea del tiempo H1 */
+
+
+
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    padding: 5px 5px 5px 5px;
+    font-size: 2.5rem;
+
+}
+
+h3 {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    padding: 32px;
+    position: relative;
+}
+
+/* agregar animaciones a h1 */
+
+
+
+
+img.imagenGrande {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px 10px 10px;
+    
+}
+
+ul {
+    display: inline-flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+li {
+    overflow-y: hidden;
+}
+img {
+    white-space: 100%
+}
+
+/* links */
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 1px;
+    overflow-y: hidden;
+}
+
+a:hover {
+    color: rgb(87, 71, 71) !important;
+    transition-duration: 1.5s;
+}
+
+div.redes {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px;
+}
+
+
+div.redes ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+div.redes ul a img {
+
+    border-radius: 50%;
+    width: 50px;
+}
+
+div form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+ul.wsp img {
+    position: fixed;
+    border-radius: 50%;
+    width: 60px;
+    bottom: 40px;
+    left: 72rem;
+    z-index: 100;
+    
+}
+
+p.firma {
+    text-align-last: center;
+    font-weight: bold;
+    font-family: 'Saira', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+}
+
+div.redes ul img {
+    
+margin: 10px;
+    padding: 5px;
+}
+    
+/* media querys */
+/* mobile last */
+/* tamaño Mobil L */
+
+@media (max-width:425px) {
+    img.imagenGrande{
+        height: 200px ;
+    }
+    h1 {
+        font-size: 25px}
+
+        div.grilla nav.nav img{
+            height: 60px;
+            position: relative;
+           right: 100px;
+           top: 20px;
+        }
+        header.header {
+
+        }
+}
+
